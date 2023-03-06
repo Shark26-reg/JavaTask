@@ -7,14 +7,9 @@ package JavaTask.task01;
  * Требуется восстановить выражение до верного равенства. 
  * Предложить хотя бы одно решение или сообщить, что его нет.
  */
-import java.util.Scanner;
 
 public class task04 {
     public static void main(String[] args) {
-        Scanner iScanner = new Scanner(System.in);
-        System.out.printf("Введите положительное число: ");
-        int s = iScanner.nextInt();
-
         System.out.println("\n\nЗадано выражение: i? + ?i = 69 . Восстановить выражение до верного равенства.");
         int count = 0;
         for (int i = 0; i < 10; i++) {
