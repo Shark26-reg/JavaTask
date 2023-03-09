@@ -51,7 +51,7 @@ public class task03 {
                 result = num1 / num2;
 
             default:
-                System.out.println("Введите оператор: -, +, *, /");
+                System.out.println("Некорректное действие!");
                 break;
         }
         return result;
