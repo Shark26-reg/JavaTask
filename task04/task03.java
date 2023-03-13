@@ -17,7 +17,7 @@ public class task03 {
         results.add(sc.nextDouble());
         sc.nextLine();
 
-        while(true) {
+        while (true) {
             System.out.print("Введите оператор (+, -, *, /, cancel, exit): ");
             String op = sc.nextLine();
 
@@ -26,14 +26,13 @@ public class task03 {
                 results.removeFirst();
 
                 if (results.size() == 0) results.add(0.0);
-                }
-            else {
+            } else {
                 System.out.print("Введите второе число: ");
                 double secNumber = sc.nextDouble();
 
                 operation(results, op, secNumber);
                 sc.nextLine();
-                }
+            }
 
             System.out.println("Результат = " + results.getFirst());
         }
@@ -46,7 +45,7 @@ public class task03 {
             case "+":
                 list.add(0, list.getFirst() + number);
                 break;
-            
+
             case "-":
                 list.add(0, list.getFirst() - number);
                 break;
@@ -54,7 +53,7 @@ public class task03 {
             case "*":
                 list.add(0, list.getFirst() * number);
                 break;
-            
+
             case "/":
                 if (number == 0) {
                     System.out.println("Не может делить на ноль!");
@@ -62,11 +61,16 @@ public class task03 {
                 }
                 list.add(0, list.getFirst() / number);
                 break;
-            
+
             default:
                 System.out.println("Неправильный оператор!");
         }
     }
 }
+
+
+
+
+
     
 
